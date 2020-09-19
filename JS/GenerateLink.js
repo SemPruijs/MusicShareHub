@@ -1,7 +1,7 @@
 //TODO: revector this in to a json file
-let streamingServices = ["Apple", "Spotify", "Youtube"];
-let Images = ["./Images/AppleMusic.jpeg", "./Images/Spotify.jpeg", "./Images/youtube.jpeg"]
-let ImagesAlt = ["Apple music logo", "Spotify logo", "Youtube logo"]
+let streamingServices = ["Spotify", "Apple", "Youtube"];
+let Images = ["./Images/Spotify.jpeg", "./Images/AppleMusic.jpeg", "./Images/youtube.jpeg"]
+let ImagesAlt = ["Spotify logo", "Apple music logo", "Youtube logo"]
 
 function generateLink(songName, platform) {
     
