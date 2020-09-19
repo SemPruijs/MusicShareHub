@@ -22,9 +22,13 @@ function generateLink(songName, platform) {
 
 function DrawPage() {
     ClearLinksContainer();
-    let container = document.getElementById("linksContainer");
+    let LinkContainer = document.getElementById("linksContainerForDivs");
     
     for (let i = 0; i < streamingServices.length; i++) {
+        var container = document.createElement("div");
+        container.className = "Container";
+        LinkContainer.appendChild(container);
+        
         var link = document.createElement("a");
         link.href = generateLink(document.getElementById("inputField").value.toString(), streamingServices[i]);
         link.innerHTML = streamingServices[i];

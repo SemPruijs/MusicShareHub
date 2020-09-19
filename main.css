@@ -24,3 +24,14 @@ button  {
     font-size: 20px;
     color: #7a7a7a;
 }
+
+.container {
+    background-color: #4a4a4a;
+    padding: 30px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
