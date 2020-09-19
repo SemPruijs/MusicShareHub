@@ -33,7 +33,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600502331638</updated>
       <workItem from="1600502333415" duration="5010000" />
-      <workItem from="1600524557643" duration="4700000" />
+      <workItem from="1600524557643" duration="4972000" />
     </task>
     <servers />
   </component>
@@ -41,6 +41,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1256" y="436" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600529564510">
+      <screen x="-1440" y="-494" width="1440" height="2537" />
+    </state>
+    <state x="-1256" y="436" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1463.1280.777/0.23.2560.1417/-1440.-494.1440.2537@-1440.-494.1440.2537" timestamp="1600529564510" />
     <state x="715" y="400" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1600502356021">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
