@@ -11,6 +11,7 @@ input[type=text] {
     font-size: 30px;
     color: #7a7a7a;
     border-radius: 10px;
+    padding-left: 8px;
 }
 
 button  {
