@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e56dfd64-1f15-448d-838b-50c102546a24" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +23,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -33,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600502331638</updated>
       <workItem from="1600502333415" duration="5010000" />
-      <workItem from="1600524557643" duration="6569000" />
+      <workItem from="1600524557643" duration="7339000" />
     </task>
     <servers />
   </component>
@@ -49,9 +57,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="715" y="400" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.23.1680.1027@0.23.1680.1027" timestamp="1600502356021" />
-    <state x="505" y="250" key="search.everywhere.popup" timestamp="1600509950109">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="-1007" y="67" width="670" height="676" key="search.everywhere.popup" timestamp="1600534301867">
+      <screen x="-1440" y="-494" width="1440" height="2537" />
     </state>
+    <state x="-1007" y="67" width="670" height="676" key="search.everywhere.popup/0.1463.1280.777/0.23.2560.1417/-1440.-494.1440.2537@-1440.-494.1440.2537" timestamp="1600534301867" />
     <state x="505" y="250" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1600509950109" />
   </component>
 </project>

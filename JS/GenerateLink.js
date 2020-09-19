@@ -1,4 +1,6 @@
+//TODO: revector this in to a json file
 let streamingServices = ["Apple", "Spotify", "Youtube"];
+let Images = ["./Images/AppleMusic.jpeg", "./Images/Spotify.jpeg", "./Images/youtube.jpeg"]
 
 function generateLink(songName, platform) {
     
@@ -25,10 +27,12 @@ function DrawPage() {
     let LinkContainer = document.getElementById("linksContainerForDivs");
     
     for (let i = 0; i < streamingServices.length; i++) {
+        //Create container for link
         var container = document.createElement("div");
         container.className = "Container";
         LinkContainer.appendChild(container);
         
+        //Create link
         var link = document.createElement("a");
         link.href = generateLink(document.getElementById("inputField").value.toString(), streamingServices[i]);
         link.innerHTML = streamingServices[i];
