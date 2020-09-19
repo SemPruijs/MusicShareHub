@@ -1,6 +1,7 @@
 //TODO: revector this in to a json file
 let streamingServices = ["Apple", "Spotify", "Youtube"];
 let Images = ["./Images/AppleMusic.jpeg", "./Images/Spotify.jpeg", "./Images/youtube.jpeg"]
+let ImagesAlt = ["Apple music logo", "Spotify logo", "Youtube logo"]
 
 function generateLink(songName, platform) {
     
@@ -35,9 +36,14 @@ function DrawPage() {
         //Create link
         var link = document.createElement("a");
         link.href = generateLink(document.getElementById("inputField").value.toString(), streamingServices[i]);
-        link.innerHTML = streamingServices[i];
         link.id = streamingServices[i];
         container.appendChild(link);
+        
+        //Create image
+        var image = document.createElement("img");
+        image.src = Images[i];
+        image.alt = ImagesAlt[i];
+        link.appendChild(image);
     }
 }
 
