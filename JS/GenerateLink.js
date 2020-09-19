@@ -17,27 +17,14 @@ function generateLink(songName, platform) {
     } 
 }
 
-// function DrawPage() {
-//     let container = document.getElementById("linksContainer");
-//    
-//     let streamingServices = ["Apple", "Spotify", "Youtube"];
-//    
-//     for (let i = 0; i < streamingServices.length; i++) {
-//         var link = document.createElement("a");
-//         link.href = generateLink("Daft Punk", streamingServices[i]);
-//         link.innerHTML = streamingServices[i];
-//         container.appendChild(link);   
-//     }
-// }
-
-window.onload = function () {
+function DrawPage() {
     let container = document.getElementById("linksContainer");
 
     let streamingServices = ["Apple", "Spotify", "Youtube"];
 
     for (let i = 0; i < streamingServices.length; i++) {
         var link = document.createElement("a");
-        link.href = generateLink("Daft Punk", streamingServices[i]);
+        link.href = generateLink(document.getElementById("inputField").value.toString(), streamingServices[i]);
         link.innerHTML = streamingServices[i];
         container.appendChild(link);
     }
