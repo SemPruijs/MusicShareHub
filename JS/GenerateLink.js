@@ -24,7 +24,12 @@ function generateLink(songName, platform) {
 }
 
 function GetUrlPutInInputField() {
-    
+    const urlData = new URLSearchParams(window.location.search);
+    const urlInput = urlData.get("input");
+    if (urlInput != null) {
+        document.getElementById("inputField").value = urlInput;
+        DrawPage();
+    }
 }
 
 function DrawPage() {
@@ -54,3 +59,7 @@ function DrawPage() {
 function ClearLinksContainer() {
     document.getElementById("linksContainerForDivs").innerHTML = "";
 }
+
+window.onload = function() {
+    GetUrlPutInInputField();
+};
