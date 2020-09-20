@@ -23,25 +23,22 @@ function generateLink(songName, platform) {
     } 
 }
 
-function GetUrlPutInInputField() {
-    const urlData = new URLSearchParams(window.location.search);
-    const urlInput = urlData.get("input");
-    if (urlInput != null) {
-        document.getElementById("inputField").value = urlInput;
-        DrawPage();
-    }
+// function GetUrlPutInInputField() {
+//     const urlData = new URLSearchParams(window.location.search);
+//     const urlInput = urlData.get("input");
+//     if (urlInput != null) {
+//         document.getElementById("inputField").value = urlInput;
+//         DrawResults();
+//     }
+// }
+
+function GetLink() {
+    return "https://sempruijs.github.io/MusicShareHub/?input=" + document.getElementById("inputField").value;
 }
 
-function GetInputPutToUrl() {
-    let url = "https://sempruijs.github.io/MusicShareHub/?input="
-    url += document.getElementById("inputField").value;
-    window.location.href = url;
-}
-
-function DrawPage() {
+function DrawResults() {
     ClearLinksContainer();
     let LinkContainer = document.getElementById("linksContainerForDivs");
-    GetInputPutToUrl();
     
     for (let i = 0; i < streamingServices.length; i++) {
         //Create container for link
@@ -61,6 +58,10 @@ function DrawPage() {
         image.alt = ImagesAlt[i];
         link.appendChild(image);
     }
+    
+    // if (document.getElementById("inputField").value !== null) {
+    //     window.location.href = GetLink();    
+    // }
 }
 
 function ClearLinksContainer() {
@@ -68,5 +69,5 @@ function ClearLinksContainer() {
 }
 
 window.onload = function() {
-    GetUrlPutInInputField();
+    // GetUrlPutInInputField();
 };
