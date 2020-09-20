@@ -32,9 +32,16 @@ function GetUrlPutInInputField() {
     }
 }
 
+function GetInputPutToUrl() {
+    let url = "https://sempruijs.github.io/MusicShareHub/?input="
+    url += document.getElementById("inputField").value;
+    window.location.href = url;
+}
+
 function DrawPage() {
     ClearLinksContainer();
     let LinkContainer = document.getElementById("linksContainerForDivs");
+    GetInputPutToUrl();
     
     for (let i = 0; i < streamingServices.length; i++) {
         //Create container for link
