@@ -3,6 +3,8 @@ let streamingServices = ["Spotify", "Apple", "Youtube"];
 let Images = ["./Images/Spotify.jpeg", "./Images/AppleMusic.jpeg", "./Images/youtube.jpeg"]
 let ImagesAlt = ["Spotify logo", "Apple music logo", "Youtube logo"]
 
+
+
 function generateLink(songName, platform) {
     
     var spotifyLink = "https://open.spotify.com/search/";
@@ -48,9 +50,5 @@ function DrawPage() {
 }
 
 function ClearLinksContainer() {
-    if (document.getElementById("Apple") != null) {
-        for (let i = 0; i < streamingServices.length; i++) {
-            document.getElementById(streamingServices[i]).innerHTML = ""
-        }   
-    }
+    document.getElementById("linksContainerForDivs").innerHTML = "";
 }
